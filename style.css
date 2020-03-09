@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Leckerli One";
+  src: url("...");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sen";
+  src: url("...");
+  font-display: swap;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body,
+.background {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 1.8rem;
+  color: #fff;
+  font-family: "Sen", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Leckerli One", "Helvetica Nueue", Helvetica, Arial;
+  font-size: 5rem;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin: 0 0 2rem;
+}
+
+a,
+a:visited {
+  color: #72bcd4;
+}
+.background {
+  background-image: url(img/sharing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.background:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  content: "";
+}
+
+main {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  width: 60rem;
+}
+
+form {
+  display: flex;
+}
+
+form input {
+  height: 4rem;
+  margin: 0;
+  border: 0;
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+form input[type="submit"] {
+  text-transform: uppercase;
+  background-color: #72bcd4;
+  color: #fff;
+  cursor: pointer;
+  width: 4rem;
+}
+
+.okbe-logo {
+  position: absolute;
+  width: 25rem;
+  bottom: 2rem;
+  left: calc(50% - 12.5rem);
+}
+
+.okbe-logo img {
+  max-width: 100%;
+}
+
+@media (max-width: 500px) {
+}
