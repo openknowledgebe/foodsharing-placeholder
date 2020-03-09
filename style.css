@@ -95,7 +95,11 @@ form input {
   margin: 0;
   border: 0;
   padding: 1rem;
-  flex-grow: 1;
+}
+
+form input[type="email"] {
+  flex-grow: 2;
+  flex-shrink: 1;
 }
 
 form input[type="submit"] {
@@ -103,7 +107,7 @@ form input[type="submit"] {
   background-color: #72bcd4;
   color: #fff;
   cursor: pointer;
-  width: 4rem;
+  flex-basis: fit-content;
 }
 
 .okbe-logo {
@@ -117,5 +121,52 @@ form input[type="submit"] {
   max-width: 100%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
+  main {
+    width: 40rem;
+  }
+
+  h1 {
+    font-size: 3.6rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  main {
+    width: 36rem;
+  }
+
+  h1 {
+    font-size: 3.6rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  form {
+    flex-direction: column;
+  }
+  form input[type="email"] {
+    margin-bottom: 0.5rem;
+  }
+  .okbe-logo {
+    width: 18rem;
+    bottom: 1rem;
+    left: calc(50% - 9rem);
+  }
+}
+
+@media (max-height: 560px) {
+  .okbe-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  main {
+    width: 90%;
+  }
 }
